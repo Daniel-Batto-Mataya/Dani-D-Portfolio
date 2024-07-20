@@ -1,0 +1,11 @@
+/* What this code does is that if the screen width is less than 1200px then the desktop-nav wil disapear */
+/* Instead the hamburger-menu should apeear */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+#hamburger-nav {
+    display: flex;
+}
+}

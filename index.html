@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+<body>
+    <!-- Navigation bar option 1 -->
+    <nav id="desktop-nav"><div class="logo">Dani.D.Draws</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a>
+                <li><a href="#experience">Experience</a>
+                <li><a href="#project">Project</a>
+                <li><a href="#contact">Contact</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navigation bar option 2 -->
+    <nav id="hamburger-nav">
+        <div class="logo">Dani.D.Draws</div>
+        
+        <!-- All code within the "hamburger menu is responsible for the menu functions" -->
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a>
+                <li><a href="#project" onclick="toggleMenu()">Project</a>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+    </div>
+    </nav>
+    <Section id="profile">
+        <div class="section_pic-container">
+            <img src="./Assets/ME 1.jpg" alt="Dani D Profile Picture">
+        </div>
+    </Section>
+    <script src="script.js"></script>
+</body>
+</html>
